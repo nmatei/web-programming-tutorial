@@ -1,0 +1,148 @@
+body {
+    background-color: #eaeaea;
+}
+
+p {
+    text-indent: 15px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 5px 0 5px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 5px 0 5px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+header {
+    padding: 10px;
+    height: 48px;
+    background-color: white;
+}
+
+#logo {
+    text-decoration: none;
+    float: left;
+}
+
+header h1 {
+    text-align: right;
+    color: #3b8dbd;
+}
+
+#content-wrapper {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 35px;
+}
+
+#breadcrumb {
+    background: #dcdcdc url("../img/house.png") 3px center no-repeat;
+    padding: 10px 5px 10px 40px;
+    border: 1px solid #c2c2c2;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #c2c2c2;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #3b8dbd;
+    color: #ffffff;
+    font-size: 0.9em;
+    padding: 8px;
+}
+
+#top-menu div {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #00aeef;
+    border-bottom: 1px solid #00aeef;
+    height: 40px;
+    font-weight: bold;
+}
+
+#top-menu div ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+}
+
+#top-menu div ul li {
+    float: left;
+}
+
+#top-menu div ul a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 15px 12px 15px;
+    display: block;
+}
+
+#top-menu div ul a:hover {
+    color: #29a7e1;
+    /*background: #c7e6f5;*/
+    background: #ffffff;
+}
+
+#left-bar {
+    float: left;
+    width: 200px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.widget .header {
+    background: #3b8dbd;
+    color: #ffffff;
+    padding: 15px;
+    text-align: right;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.widget .content {
+    padding: 10px;
+}
+
+.widget .content p {
+    border-bottom: 1px solid #d2d2d2;
+    padding: 10px 0;
+}
+.widget.collapsed .content {
+    display: none;
+}
+.widget.collapsed .header {
+    border-radius: 8px;
+}
+
+#content {
+    padding-left: 220px
+}
+
+.red-element {
+    color: red;
+}
+
+/* for debugging layers use class="borders" */
+.borders {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid gray;
+}
