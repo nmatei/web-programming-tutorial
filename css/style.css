@@ -44,9 +44,10 @@ header h1 {
 #breadcrumb {
     background: #dcdcdc url("../img/house.png") 3px center no-repeat;
     padding: 10px 5px 10px 40px;
-    border: 1px solid #c2c2c2;
+    border: 1px solid #00aeef;
     border-radius: 3px;
     box-shadow: 1px 1px 3px #c2c2c2;
+    color: #245674;
 }
 
 .clear {
@@ -102,12 +103,20 @@ footer {
 #left-bar {
     float: left;
     width: 200px;
-    background: #fff;
+}
+
+.widget {
+    margin-bottom: 5px;
     border-radius: 8px;
+    background: #fff;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #00aeef;
+    box-shadow: 1px 1px 3px #c2c2c2;
 }
 
 .widget .header {
-    background: #3b8dbd;
+    background: #3b8dbd url("../img/toggle-collapse.png") 15px center no-repeat;
     color: #ffffff;
     padding: 15px;
     text-align: right;
@@ -125,11 +134,14 @@ footer {
     border-bottom: 1px solid #d2d2d2;
     padding: 10px 0;
 }
+
 .widget.collapsed .content {
     display: none;
 }
+
 .widget.collapsed .header {
     border-radius: 8px;
+    background-image: url("../img/toggle-expand.png");
 }
 
 #content {
