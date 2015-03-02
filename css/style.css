@@ -8,21 +8,25 @@ p {
 
 h1 {
     font-size: 2em;
-    margin: 5px 0 5px 0;
+    margin: 10px 0 5px 0;
 }
 
 h2 {
     font-size: 1.5em;
-    margin: 5px 0 5px 0;
+    margin: 10px 0 5px 0;
 }
 
 strong {
     font-weight: bold;
 }
 
+ul, li {
+    margin-left: 25px;
+}
+
 header {
     padding: 10px;
-    height: 48px;
+    min-height: 48px;
     background-color: white;
 }
 
@@ -85,13 +89,15 @@ footer {
 
 #top-menu div ul li {
     float: left;
+    height: 40px;
 }
 
 #top-menu div ul a {
     color: #ffffff;
     text-decoration: none;
-    padding: 12px 15px 12px 15px;
+    padding: 10px 15px 10px 15px;
     display: block;
+    height: 20px;
 }
 
 #top-menu div ul a:hover {

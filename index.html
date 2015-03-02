@@ -35,12 +35,12 @@
                 <div class="content">
                     <p>
                         Today we created a new web site
-                        <a id="show-info" href="#" onclick="document.getElementById('more-info').style.display='inline'; document.getElementById('show-info').style.display='none';">read more</a>
+                        <a id="show-info" href="#">read more</a>
 
                     <span id="more-info" style="display: none;">
                         made at 'Web programming' course.
                         We learned about HTML (Hyper Text Markup Language), CSS (Cascading Style Sheets) and JS (JavaScript)
-                        <a href="#" onclick="document.getElementById('more-info').style.display='none'; document.getElementById('show-info').style.display='inline';">hide detail</a>
+                        <a id="hide-info" href="#">hide detail</a>
                     </span>
                     </p>
                     <p class="red-element">This is a red paragraph, it has 'red-element' class (declared in style.css)</p>
@@ -67,6 +67,20 @@
                 Make this web site as you wish. Change/Add any <strong>attributes</strong> you have learned in this example.
                 Add/edit <strong>elements</strong> in HTML page as you wish, to create custom components in your page.
             </p>
+            <h2>Exercises</h2>
+            <ol>
+                <li>Add new widget</li>
+                <li>Make sure you understand how to find any elements with:
+                    <ul>
+                        <li>document.getElementById('element-id')</li>
+                        <li>document.getElementsByClassName("class-name")</li>
+                        <li>document.getElementsByTagName("a")</li>
+                        <li>and nested combinations of those</li>
+                    </ul>
+                </li>
+                <li>play in FireBug to find and change some attributes (color, display, width, height, etc.) of some elements</li>
+                <li>Make all widgets collapsible</li>
+            </ol>
             <p>I hope is all clear.</p>
         </div>
         <div class="clear"></div>
