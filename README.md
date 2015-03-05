@@ -20,12 +20,12 @@ Learning Pure JS
 ----------------
 
 - variables
-    - boolean | var y = true;
-    - number  | var i = 10;
-    - string  | var s = 'text';
+    - boolean | var employed = true;
+    - number  | var age = 10;
+    - string  | var name = 'text';
     - object
-        - array | var a = [1, 2, 3];
-        - json  | var p = {name: 'me', company: 'fasttrackit', age: 29, married: true, skills: ['html', 'css', 'js']};
+        - array | var skills = ['html', 'css', 'js'];
+        - json  | var p = {name: 'me', age: 29, employed: true, skills: ['html', 'css', 'js']};
         - object (DOM elements, others)
 - functions
     - parameters

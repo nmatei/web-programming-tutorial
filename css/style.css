@@ -20,7 +20,7 @@ strong {
     font-weight: bold;
 }
 
-ul, li {
+ul, ol {
     margin-left: 25px;
 }
 
@@ -98,12 +98,15 @@ footer {
     padding: 10px 15px 10px 15px;
     display: block;
     height: 20px;
+    transition: .5s;
 }
 
 #top-menu div ul a:hover {
     color: #29a7e1;
-    /*background: #c7e6f5;*/
     background: #ffffff;
+}
+#top-menu div ul a:active {
+    background: #c7e6f5;
 }
 
 #left-bar {
@@ -133,7 +136,7 @@ footer {
 }
 
 .widget .content {
-    padding: 10px;
+    padding: 5px 10px 10px 10px;
 }
 
 .widget .content p {
@@ -148,6 +151,10 @@ footer {
 .widget.collapsed .header {
     border-radius: 8px;
     background-image: url("../img/toggle-expand.png");
+}
+
+#google-search #q{
+    margin: 5px 0;
 }
 
 #content {
