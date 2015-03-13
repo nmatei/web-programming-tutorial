@@ -9,7 +9,7 @@ $('#hide-info').click(function () {
     $('#show-info').show();
 });
 
-// collapse/expand news widget
+// collapse/expand all widgets
 $(".widget .header").click(function () {
     var widget = $(this).parent();
     if (widget.hasClass('collapsed')) {
