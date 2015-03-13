@@ -4,7 +4,6 @@ Web Programming Tutorial
 Web Site example using css layout and basic java script utilities
 
 [HTML Preview](http://htmlpreview.github.io/?https://github.com/flaviuratiu/web-programming-tutorial/blob/master/index.html)
-[HTML Preview](http://htmlpreview.github.io/?https://github.com/flaviuratiu/web-programming-tutorial/blob/master/agenda.html)
 
 Exercises
 ---------
