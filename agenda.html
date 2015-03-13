@@ -9,5 +9,170 @@
 </head>
 <body>
 
+<div id="layout" class="x-borders">
+    <header>
+        <a id="logo" href="." title="FastTrackIT">
+            <img src="img/logo.png" alt="FastTrackIT" title="FastTrackIT">
+        </a>
+
+        <h1>Welcome to our First Web Site made @ FastTrackIT</h1>
+    </header>
+
+    <div id="top-menu">
+        <div>
+            <ul>
+                <li><a href="#" title="welcome home" name="home">HOME</a></li>
+                <li><a href="#" title="my personal projects" name="projects">Projects</a></li>
+                <li><a href="#" title="about me" name="about">About</a></li>
+                <li><a href="#" title="contact me" name="contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content-wrapper">
+        <div id="left-bar">
+            <div id="news-widget" class="widget collapsed">
+                <div class="header" title="Show/Hide content">News</div>
+                <div class="content">
+                    <p>
+                        Today we created a new web site
+                        <a id="show-info" href="#">read more</a>
+
+                    <span id="more-info" style="display: none;">
+                        made at 'Web programming' course.
+                        We learned about HTML (Hyper Text Markup Language), CSS (Cascading Style Sheets) and JS (JavaScript)
+                        <a id="hide-info" href="#">hide detail</a>
+                    </span>
+                    </p>
+
+                    <p class="red-element">This is a red paragraph, it has 'red-element' class (declared in
+                        style.css)</p>
+
+                    <p class="red-element">One more red paragraph</p>
+
+                    <p>Normal paragraph</p>
+                </div>
+            </div>
+
+            <div id="help-widget" class="widget">
+                <div class="header">Help links</div>
+                <div class="content">
+                    <p><a href="http://www.cssmatic.com/box-shadow" target="_blank">box-shadow generator</a></p>
+
+                    <p><a href="http://www.cssmatic.com/border-radius" target="_blank">border-radius generator</a></p>
+                </div>
+            </div>
+
+            <div id="google-search" class="widget">
+                <div class="header">Google Search</div>
+                <div class="content">
+                    <form action="http://www.google.com/search" target="_blank">
+                        <label for="q">Keyword(s):</label>
+                        <input type="text" name="q" id="q">
+                        <input type="hidden" name="ie" value="utf-8">
+                        <input type="hidden" name="oe" value="utf-8">
+                        <input type="hidden" name="as_sitesearch" value="fasttrackit.org">
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+
+            <div id="color-picker-widget" class="widget">
+                <div class="header">Color Picker</div>
+                <div class="content">
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="breadcrumb">HOME : welcome home</div>
+
+            <div id="agenda">
+                <h1>Contacts List</h1>
+
+                <p>Contacts list started in 2013, March.</p>
+
+                <div class="agenda-content-column">
+                    <h2>All contacts</h2>
+
+                    <div class="contacts-section">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>First Name
+                                </th>
+                                <td>Last Name
+                                </th>
+                                <td>Phone Number
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Flaviu</td>
+                                <td>Ratiu</td>
+                                <td>4329084320</td>
+                            </tr>
+                            <tr>
+                                <td>Alex</td>
+                                <td>Ratiu</td>
+                                <td>4331284320</td>
+                            </tr>
+                            <tr>
+                                <td>Ion</td>
+                                <td>Pop</td>
+                                <td>0432432</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="agenda-content-column">
+                <h2>Search contact</h2>
+
+                <div>
+                    <form id="search-contact-form">
+                        <input id="contacts-search-keyword" type="text" value="Enter contact name or phone number"
+                               class="text-field default-state">
+                        <input id="contacts-search-button" type="submit" value="Search" class="button">
+                    </form>
+                </div>
+
+                <h2>Add contact</h2>
+
+                <div>
+                    <form id="add-contact-form">
+                        <div>
+                            <label for="contact-first-name">First Name:</label>
+                            <input id="contact-first-name" type="text" class="text-field">
+                        </div>
+                        <div>
+                            <label for="contact-last-name">Last Name:</label>
+                            <input id="contact-last-name" type="text" class="text-field">
+                        </div>
+                        <div>
+                            <label for="contact-phone-number">Phone Number:</label>
+                            <input id="contact-phone-number" type="text" class="text-field">
+                        </div>
+                        <div>
+                            <input id="add-contact-button" type="submit" value="Add contact" class="button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <footer>
+            <p>&copy; 2015 FastTrackIT. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/functions.js" type="text/javascript"></script>
+
 </body>
 </html>

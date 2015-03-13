@@ -197,82 +197,101 @@ footer {
 
 /*personal details table styling*/
 .personal-details-section {
-    margin:0px;padding:0px;
-    width:100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
     box-shadow: 10px 10px 5px #888888;
-    border:1px solid #ffffff;
+    border: 1px solid #ffffff;
 
-    -moz-border-radius-bottomleft:11px;
-    -webkit-border-bottom-left-radius:11px;
-    border-bottom-left-radius:11px;
+    -moz-border-radius-bottomleft: 11px;
+    -webkit-border-bottom-left-radius: 11px;
+    border-bottom-left-radius: 11px;
 
-    -moz-border-radius-bottomright:11px;
-    -webkit-border-bottom-right-radius:11px;
-    border-bottom-right-radius:11px;
+    -moz-border-radius-bottomright: 11px;
+    -webkit-border-bottom-right-radius: 11px;
+    border-bottom-right-radius: 11px;
 
-    -moz-border-radius-topright:11px;
-    -webkit-border-top-right-radius:11px;
-    border-top-right-radius:11px;
+    -moz-border-radius-topright: 11px;
+    -webkit-border-top-right-radius: 11px;
+    border-top-right-radius: 11px;
 
-    -moz-border-radius-topleft:11px;
-    -webkit-border-top-left-radius:11px;
-    border-top-left-radius:11px;
-}.personal-details-section table{
-     border-collapse: collapse;
-     border-spacing: 0;
-     width:100%;
-     height:100%;
-     margin:0px;
-     padding:0px;
- }.personal-details-section tr:last-child td:last-child {
-      -moz-border-radius-bottomright:11px;
-      -webkit-border-bottom-right-radius:11px;
-      border-bottom-right-radius:11px;
-  }
+    -moz-border-radius-topleft: 11px;
+    -webkit-border-top-left-radius: 11px;
+    border-top-left-radius: 11px;
+}
+
+.personal-details-section table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.personal-details-section tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 11px;
+    -webkit-border-bottom-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
 .personal-details-section table tr:first-child td:first-child {
-    -moz-border-radius-topleft:11px;
-    -webkit-border-top-left-radius:11px;
-    border-top-left-radius:11px;
+    -moz-border-radius-topleft: 11px;
+    -webkit-border-top-left-radius: 11px;
+    border-top-left-radius: 11px;
 }
+
 .personal-details-section table tr:first-child td:last-child {
-    -moz-border-radius-topright:11px;
-    -webkit-border-top-right-radius:11px;
-    border-top-right-radius:11px;
-}.personal-details-section tr:last-child td:first-child{
-     -moz-border-radius-bottomleft:11px;
-     -webkit-border-bottom-left-radius:11px;
-     border-bottom-left-radius:11px;
- }.personal-details-section tr:hover td{
-      background-color:#d3e9ff;
-  }
-
-.personal-details-section td{
-    vertical-align:middle;
-
-    background-color:#aad4ff;
-
-    border:1px solid #ffffff;
-    border-width:0px 1px 1px 0px;
-    text-align:left;
-    padding:7px;
-    font-size:13px;
-    font-family:Arial;
-    font-weight:normal;
-    color:#000000;
-}.personal-details-section tr:last-child td{
-     border-width:0px 1px 0px 0px;
- }.personal-details-section tr td:last-child{
-      border-width:0px 0px 1px 0px;
-  }.personal-details-section tr:last-child td:last-child{
-       border-width:0px 0px 0px 0px;
-   }
-
-.personal-details-section tr:first-child td:first-child{
-    border-width:0px 0px 1px 0px;
+    -moz-border-radius-topright: 11px;
+    -webkit-border-top-right-radius: 11px;
+    border-top-right-radius: 11px;
 }
-.personal-details-section tr:first-child td:last-child{
-    border-width:0px 0px 1px 1px;
+
+.personal-details-section tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 11px;
+    -webkit-border-bottom-left-radius: 11px;
+    border-bottom-left-radius: 11px;
 }
+
+.personal-details-section tr:hover td {
+    background-color: #d3e9ff;
+}
+
+.personal-details-section td {
+    vertical-align: middle;
+
+    background-color: #aad4ff;
+
+    border: 1px solid #ffffff;
+    border-width: 0px 1px 1px 0px;
+    text-align: left;
+    padding: 7px;
+    font-size: 13px;
+    font-family: Arial;
+    font-weight: normal;
+    color: #000000;
+}
+
+.personal-details-section tr:last-child td {
+    border-width: 0px 1px 0px 0px;
+}
+
+.personal-details-section tr td:last-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.personal-details-section tr:last-child td:last-child {
+    border-width: 0px 0px 0px 0px;
+}
+
+.personal-details-section tr:first-child td:first-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.personal-details-section tr:first-child td:last-child {
+    border-width: 0px 0px 1px 1px;
+}
+
 .personal-details-section td:first-child {
     font-weight: bold;
     text-align: center;
@@ -283,29 +302,225 @@ footer {
     padding: 10px;
 }
 
+/*contacts list page styling*/
+.agenda-content-column {
+    width: 40%;
+    float: left;
+    padding-right: 80px;
+}
+
+.agenda-content-column h2 {
+    padding: 10px;
+}
+
+.agenda-content-column .text-field {
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.agenda-content-column .button {
+    height: 26px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888888;
+
+    background: -o-linear-gradient(bottom, #4c4c4c 5%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4c4c4c), color-stop(1, #000000));
+    background: -moz-linear-gradient(center top, #4c4c4c 5%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4c4c", endColorstr="#000000");
+    background: -o-linear-gradient(top, #4c4c4c, 000000);
+
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#contacts-search-keyword {
+    margin-right: 15px;
+    width: 250px;
+    padding-left: 15px;
+}
+
+#contacts-search-keyword.default-state {
+    font-style: italic;
+    color: gray;
+}
+
+#add-contact-form {
+    width: 60%;
+}
+
+#add-contact-form div {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+#add-contact-form label {
+    float: left;
+}
+
+#add-contact-form .text-field {
+    float: right;
+}
+
+/*contacts table styling*/
+
+/*TODO: Fix bug: section border-radius 0 for some reason*/
+.contacts-section {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    box-shadow: 10px 10px 5px #888888;
+    border: 1px solid #000000;
+
+    -moz-border-radius-bottomleft: 11px;
+    -webkit-border-bottom-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+
+    -moz-border-radius-bottomright: 11px;
+    -webkit-border-bottom-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+
+    -moz-border-radius-topright: 11px;
+    -webkit-border-top-right-radius: 11px;
+    border-top-right-radius: 11px;
+
+    -moz-border-radius-topleft: 11px;
+    -webkit-border-top-left-radius: 11px;
+    border-top-left-radius: 11px;
+}
+
+.contacts-section table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contacts-section tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 11px;
+    -webkit-border-bottom-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.contacts-section table tr:first-child td:first-child {
+    -moz-border-radius-topleft: 11px;
+    -webkit-border-top-left-radius: 11px;
+    border-top-left-radius: 11px;
+}
+
+.contacts-section table tr:first-child td:last-child {
+    -moz-border-radius-topright: 11px;
+    -webkit-border-top-right-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.contacts-section tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 11px;
+    -webkit-border-bottom-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+}
+
+.contacts-section tr:hover td {
+
+}
+
+.contacts-section tr:nth-child(odd) {
+    background-color: #e5e5e5;
+}
+
+.contacts-section tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.contacts-section td {
+    vertical-align: middle;
+
+    border: 1px solid #000000;
+    border-width: 0px 1px 1px 0px;
+    text-align: left;
+    padding: 7px;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    color: #000000;
+}
+
+.contacts-section tr:last-child td {
+    border-width: 0px 1px 0px 0px;
+}
+
+.contacts-section tr td:last-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.contacts-section tr:last-child td:last-child {
+    border-width: 0px 0px 0px 0px;
+}
+
+.contacts-section tr:first-child td {
+    background: -o-linear-gradient(bottom, #4c4c4c 5%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4c4c4c), color-stop(1, #000000));
+    background: -moz-linear-gradient(center top, #4c4c4c 5%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4c4c", endColorstr="#000000");
+    background: -o-linear-gradient(top, #4c4c4c, 000000);
+
+    background-color: #4c4c4c;
+    border: 0px solid #000000;
+    text-align: center;
+    border-width: 0px 0px 1px 1px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contacts-section tr:first-child:hover td {
+    background: -o-linear-gradient(bottom, #4c4c4c 5%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4c4c4c), color-stop(1, #000000));
+    background: -moz-linear-gradient(center top, #4c4c4c 5%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4c4c", endColorstr="#000000");
+    background: -o-linear-gradient(top, #4c4c4c, 000000);
+
+    background-color: #4c4c4c;
+}
+
+.contacts-section tr:first-child td:first-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.contacts-section tr:first-child td:last-child {
+    border-width: 0px 0px 1px 1px;
+}
+
 /*checklist styling*/
 #checklist {
     float: right;
     margin: 30px 60px;
-    padding:20px;
+    padding: 20px;
     box-shadow: 10px 10px 5px #888888;
-    border:1px solid #ffffff;
+    border: 1px solid #ffffff;
 
-    -moz-border-radius-bottomleft:11px;
-    -webkit-border-bottom-left-radius:11px;
-    border-bottom-left-radius:11px;
+    -moz-border-radius-bottomleft: 11px;
+    -webkit-border-bottom-left-radius: 11px;
+    border-bottom-left-radius: 11px;
 
-    -moz-border-radius-bottomright:11px;
-    -webkit-border-bottom-right-radius:11px;
-    border-bottom-right-radius:11px;
+    -moz-border-radius-bottomright: 11px;
+    -webkit-border-bottom-right-radius: 11px;
+    border-bottom-right-radius: 11px;
 
-    -moz-border-radius-topright:11px;
-    -webkit-border-top-right-radius:11px;
-    border-top-right-radius:11px;
+    -moz-border-radius-topright: 11px;
+    -webkit-border-top-right-radius: 11px;
+    border-top-right-radius: 11px;
 
-    -moz-border-radius-topleft:11px;
-    -webkit-border-top-left-radius:11px;
-    border-top-left-radius:11px;
+    -moz-border-radius-topleft: 11px;
+    -webkit-border-top-left-radius: 11px;
+    border-top-left-radius: 11px;
 }
 
 #tasks img {

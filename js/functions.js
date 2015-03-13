@@ -86,8 +86,12 @@ colorPickerWidget.getElementsByClassName("header")[0].onclick = function () {
 var links = document.getElementById("top-menu").getElementsByTagName("a");
 for (var i = 0; i < links.length; i++) {
 
-    links[i].onclick = function(){
+    links[i].onclick = function () {
         document.getElementById("breadcrumb").innerHTML = this.innerHTML + " : " + this.title;
+        if (window.location.href.indexOf("index.html") < 1) {
+            window.location.href = "file:///C:/Users/Flaviu/Dropbox/fasttrackit/web-programming-tutorial/index.html"
+        }
+        //TODO: Fix bug: all menu links redirect the user to the homepage after accessing the Contacts List page
         manageContent(this.getAttribute("name"));
     }
 }
@@ -102,10 +106,27 @@ function manageContent(contentName) {
 
 // Hiding all dynamic content
 var dynamicContent = content.getElementsByClassName("dynamic-content");
-function hideDynamicContent(){
+function hideDynamicContent() {
     for (var j = 0; j < dynamicContent.length; j++) {
         if (!dynamicContent[j].classList.contains("hidden")) {
             dynamicContent[j].classList.add("hidden");
         }
+    }
+}
+
+// Clearing search field
+var contactSearchField = document.getElementById("contacts-search-keyword");
+contactSearchField.onclick = function () {
+    if (this.classList.contains("default-state")) {
+        this.value = "";
+        this.classList.remove("default-state")
+    }
+}
+
+// Populating empty search field with the default text when not focused
+document.getElementsByTagName("body")[0].onclick = function () {
+    if (contactSearchField.value == "" && contactSearchField != document.activeElement) {
+        contactSearchField.value = "Enter contact name or phone number"
+        contactSearchField.classList.add("default-state")
     }
 }
