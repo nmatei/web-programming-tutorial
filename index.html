@@ -10,99 +10,258 @@
 <body>
 
 <div id="layout" class="x-borders">
-    <header>
-        <a id="logo" href="." title="FastTrackIT">
-            <img src="img/logo.png" alt="FastTrackIT" title="FastTrackIT">
-        </a>
-        <h1>Welcome to our First Web Site made @ FastTrackIT</h1>
-    </header>
+<header>
+    <a id="logo" href="." title="FastTrackIT">
+        <img src="img/logo.png" alt="FastTrackIT" title="FastTrackIT">
+    </a>
 
-    <div id="top-menu">
-        <div>
-            <ul>
-                <li><a href="#" title="welcome home">HOME</a></li>
-                <li><a href="#" title="my personal projects">Projects</a></li>
-                <li><a href="#" title="about me">About</a></li>
-                <li><a href="#" title="contact me">Contact</a></li>
-            </ul>
-        </div>
+    <h1>Welcome to our First Web Site made @ FastTrackIT</h1>
+</header>
+
+<div id="top-menu">
+    <div>
+        <ul>
+            <li><a href="#" title="welcome home" name="home">HOME</a></li>
+            <li><a href="#" title="my personal projects" name="projects">Projects</a></li>
+            <li><a href="#" title="about me" name="about">About</a></li>
+            <li><a href="#" title="contact me" name="contact">Contact</a></li>
+        </ul>
     </div>
+</div>
 
-    <div id="content-wrapper">
-        <div id="left-bar">
-            <div id="news-widget" class="widget collapsed">
-                <div class="header" title="Show/Hide content">News</div>
-                <div class="content">
-                    <p>
-                        Today we created a new web site
-                        <a id="show-info" href="#">read more</a>
+<div id="content-wrapper">
+<div id="left-bar">
+    <div id="news-widget" class="widget collapsed">
+        <div class="header" title="Show/Hide content">News</div>
+        <div class="content">
+            <p>
+                Today we created a new web site
+                <a id="show-info" href="#">read more</a>
 
                     <span id="more-info" style="display: none;">
                         made at 'Web programming' course.
                         We learned about HTML (Hyper Text Markup Language), CSS (Cascading Style Sheets) and JS (JavaScript)
                         <a id="hide-info" href="#">hide detail</a>
                     </span>
-                    </p>
-                    <p class="red-element">This is a red paragraph, it has 'red-element' class (declared in style.css)</p>
-                    <p class="red-element">One more red paragraph</p>
-                    <p>Normal paragraph</p>
-                </div>
-            </div>
-            
-            <div id="help-widget" class="widget">
-                <div class="header">Help links</div>
-                <div class="content">
-                    <p><a href="http://www.cssmatic.com/box-shadow" target="_blank">box-shadow generator</a></p>
-                    <p><a href="http://www.cssmatic.com/border-radius" target="_blank">border-radius generator</a></p>
-                </div>
-            </div>
-            
-            <div id="google-search" class="widget">
-                <div class="header">Google Search</div>
-                <div class="content">
-                    <form action="http://www.google.com/search" target="_blank">
-                        <label for="q">Keyword(s):</label>
-                        <input type="text" name="q" id="q">
-                        <input type="hidden" name="ie" value="utf-8">
-                        <input type="hidden" name="oe" value="utf-8">
-                        <input type="hidden" name="as_sitesearch" value="fasttrackit.org">
-                        <input type="submit" value="Search">
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div id="content">
-            <div id="breadcrumb">HOME : welcome home</div>
-
-            <h1>Homework</h1>
-            <p>Write some info about you.</p>
-            <p>
-                Make this web site as you wish. Change/Add any <strong>attributes</strong> you have learned in this example.
-                Add/edit <strong>elements</strong> in HTML page as you wish, to create custom components in your page.
             </p>
-            <h2>Exercises</h2>
-            <ol>
-                <li>Add new widget</li>
-                <li>Make sure you understand how to find any elements with:
-                    <ul>
-                        <li>document.getElementById('element-id')</li>
-                        <li>document.getElementsByClassName("class-name")</li>
-                        <li>document.getElementsByTagName("a")</li>
-                        <li>and nested combinations of those</li>
-                    </ul>
-                </li>
-                <li>play in FireBug to find and change some attributes (color, display, width, height, etc.) of some elements</li>
-                <li>Make all widgets collapsible</li>
-            </ol>
-            <p>I hope is all clear.</p>
+
+            <p class="red-element">This is a red paragraph, it has 'red-element' class (declared in
+                style.css)</p>
+
+            <p class="red-element">One more red paragraph</p>
+
+            <p>Normal paragraph</p>
         </div>
-        <div class="clear"></div>
     </div>
 
-    <footer>
-        <p>&copy; 2015 FastTrackIT. All rights reserved.</p>
-    </footer>
+    <div id="help-widget" class="widget">
+        <div class="header">Help links</div>
+        <div class="content">
+            <p><a href="http://www.cssmatic.com/box-shadow" target="_blank">box-shadow generator</a></p>
+
+            <p><a href="http://www.cssmatic.com/border-radius" target="_blank">border-radius generator</a></p>
+        </div>
+    </div>
+
+    <div id="google-search" class="widget">
+        <div class="header">Google Search</div>
+        <div class="content">
+            <form action="http://www.google.com/search" target="_blank">
+                <label for="q">Keyword(s):</label>
+                <input type="text" name="q" id="q">
+                <input type="hidden" name="ie" value="utf-8">
+                <input type="hidden" name="oe" value="utf-8">
+                <input type="hidden" name="as_sitesearch" value="fasttrackit.org">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+
+    <div id="color-picker-widget" class="widget">
+        <div class="header">Color Picker</div>
+        <div class="content">
+
+
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div id="breadcrumb">HOME : welcome home</div>
+
+    <div id="default-content" class="dynamic-content" name="home">
+        <h1>Homework</h1>
+
+        <p>Write some info about you.</p>
+
+        <p>
+            Make this web site as you wish. Change/Add any <strong>attributes</strong> you have learned in this
+            example.
+            Add/edit <strong>elements</strong> in HTML page as you wish, to create custom components in your
+            page.
+        </p>
+
+        <h2>Exercises</h2>
+        <ol>
+            <li>Add new widget</li>
+            <li>Make sure you understand how to find any elements with:
+                <ul>
+                    <li>document.getElementById('element-id')</li>
+                    <li>document.getElementsByClassName("class-name")</li>
+                    <li>document.getElementsByTagName("a")</li>
+                    <li>and nested combinations of those</li>
+                </ul>
+            </li>
+            <li>play in FireBug to find and change some attributes (color, display, width, height, etc.) of some
+                elements
+            </li>
+            <li>Make all widgets collapsible</li>
+        </ol>
+        <p>I hope is all clear.</p>
+    </div>
+
+    <div id="projects-content" class="dynamic-content hidden" name="projects">
+        <h1>My personal projects</h1>
+
+        <p>Here are my personal projects:</p>
+        <ul>
+            <li><a href="agenda.html">Contacts List</a></li>
+        </ul>
+    </div>
+
+    <div id="about-me-content" class="dynamic-content hidden" name="about">
+        <h1>About me</h1>
+
+        <p>Here are some details about me:</p>
+
+        <div class="personal-details-section">
+            <table id="personal-details">
+                <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Flaviu Ratiu</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>QA Tester at <a href="http://www.freshbyteinc.com/" target="_blank">Freshbyte</a></td>
+                </tr>
+                <tr>
+                    <td>Education</td>
+                    <td><a href="http://www.fasttrackit.org/" target="_blank">FastTrackIT</a> - Practical
+                        Introduction to Programming
+                    </td>
+                </tr>
+                <tr>
+                    <td>Interests</td>
+                    <td>
+                        <ul>
+                            <li>Web programming</li>
+                            <li>People</li>
+                            <li>Sports</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>More details</td>
+                    <td>
+                        <ul id="social-icons">
+                            <li>
+                                <a href="ro.linkedin.com/pub/flaviu-ratiu/6b/a73/262/en" target="_blank">
+                                    <img src="img/linkedin.png" alt="LinkedIn Profile"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/u/0/107798366858735278738/about" target="_blank">
+                                    <img src="img/googleplus.jpg" alt="GooglePlus Profile"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="contact-content" class="dynamic-content hidden" name="contact">
+        <h1>Contact me</h1>
+
+        <p>Please submit any comments or questions in the form below.</p>
+
+        <form method="post" action="mailto:ratiu.flaviu@gmail.com" enctype="text/plain" id="contact-form">
+            <p>
+                <label for="q">Message:</label>
+            </p>
+
+            <div>
+                <textarea rows="10" cols="50" name="q" id="message">Type your message here.</textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send message">
+            </div>
+        </form>
+    </div>
+
+    <div id="checklist" class="fixed-content">
+        <table id="tasks">
+            <thead>
+            <tr>
+                <th>Status</th>
+                <th>Task</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="img/checkmark.png"/></td>
+                <td>Add tasks checklist</td>
+            </tr>
+            <tr>
+                <td><img src="img/checkmark.png"/></td>
+                <td>Dynamically change the content based on the selected menu link</td>
+            </tr>
+            <tr>
+                <td><img src="img/checkmark.png"/></td>
+                <td>Add content on the 'Projects' page</td>
+            </tr>
+            <tr>
+                <td><img src="img/checkmark.png"/></td>
+                <td>Add content on the 'About me' page</td>
+            </tr>
+            <tr>
+                <td><img src="img/checkmark.png"/></td>
+                <td>Add content on the 'Contact' page</td>
+            </tr>
+            <tr>
+                <td><img src="img/xmark.png"/></td>
+                <td>Add Color Picker widget</td>
+            </tr>
+            <tr>
+                <td><img src="img/checkmark.png"/></td>
+                <td>Add toggle functionality to all widgets</td>
+            </tr>
+            <tr>
+                <td><img src="img/xmark.png"/></td>
+                <td>Add toggle functionality to all widgets avoiding code repetition</td>
+            </tr>
+            <tr>
+                <td><img src="img/xmark.png"/></td>
+                <td>Create page for the Contacts List project</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="clear"></div>
+</div>
+
+<footer>
+    <p>&copy; 2015 FastTrackIT. All rights reserved.</p>
+</footer>
 </div>
 
 <script src="js/functions.js" type="text/javascript"></script>
