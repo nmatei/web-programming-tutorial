@@ -33,3 +33,18 @@ Learning Pure JS
     - parameters
     - scope
 
+Lesson 2 Plan
+--------
+- review last lesson
+- homework review
+- DataView examples with general elements (html, css)
+
+- js scope
+- functions in functions
+- anonymous functions
+- ajax
+- add project in tomcat to make ajax calls (example to make link in webapps)
+    
+        cd c:\Progs\apache-tomcat-8.0.20\webapps
+        mklink /J web-tutorial c:\Producs\web-programming-tutorial
+

@@ -171,3 +171,10 @@ footer {
     margin: 5px;
     border: 1px solid gray;
 }
+
+#calendar-widget table {
+    border-collapse: collapse;
+}
+#calendar-widget td {
+    border: 1px solid #29a7e1;
+}
