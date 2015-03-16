@@ -33,4 +33,3 @@ for(var i = 0; i< widgets.length; i++) {
     // variables scope
     initWidget(widgets[i]);
 }
-

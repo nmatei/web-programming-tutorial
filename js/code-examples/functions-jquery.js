@@ -19,12 +19,6 @@ $(".widget .header").click(function () {
     }
 });
 
-// actions for top links
-$("#top-menu a").click(function () {
-    $("#breadcrumb").text(this.innerHTML + " : " + this.title);
-});
-
-
 // close widget with animation
 //$(".widget .header").click(function () {
 //    var widget = $(this).parent();
@@ -36,3 +30,9 @@ $("#top-menu a").click(function () {
 //    });
 //    widget.toggleClass('x-collapsed');
 //});
+
+// actions for top links
+$("#top-menu a").click(function () {
+    $("#breadcrumb").text(this.innerHTML + " : " + this.title);
+});
+
