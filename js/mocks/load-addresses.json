@@ -1,8 +1,17 @@
 {
   "success": true,
   "data": [
-    {"name": "Daniel", "phone": "0712345601"},
-    {"name": "Ionel", "phone": "0712345602"},
-    {"name": "Matei", "phone": "0712345603"}
+    {
+      "name": "Daniel",
+      "phone": "0712345601"
+    },
+    {
+      "name": "Ionel",
+      "phone": "0712345602"
+    },
+    {
+      "name": "Matei",
+      "phone": "0712345603"
+    }
   ]
 }
