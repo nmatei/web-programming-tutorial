@@ -1,0 +1,26 @@
+.cards-table {
+    margin-top: 10px;
+    display: inline-block;
+}
+.card {
+    border: 1px solid #29a7e1;
+    border-radius: 5px;
+    width: 70px;
+    height: 115px;
+    padding: 5px;
+    background: #ffffff;
+    float: left;
+    margin-left: 5px;
+}
+.red-card {
+    color: red;
+}
+.card-symbol {
+    text-align: center;
+    font-size: 3em;
+    line-height: 0.7em;
+}
+.card-name-bottom {
+    transform: rotate(-180deg);
+    margin-top: 10px;
+}
