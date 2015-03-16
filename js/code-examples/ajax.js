@@ -26,8 +26,8 @@ $.ajax({
 }).done(function (response) {
     console.debug('addresses have been loaded:', response);
     if(response.success){
-        for (var i = 0 ; i < response.data.length ; i++) {
-            console.info(response.data[i].name + ' - ' + response.data[i].phone);
+        for (var i = 0 ; i < response.addresses.length ; i++) {
+            console.info(response.addresses[i].name + ' - ' + response.addresses[i].phone);
         }
     }
 });
