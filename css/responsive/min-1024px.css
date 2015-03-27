@@ -1,0 +1,7 @@
+/*Optimize text for reading*/
+
+header div, #content-wrapper {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}

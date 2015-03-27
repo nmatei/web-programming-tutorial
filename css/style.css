@@ -33,6 +33,7 @@ header {
 #logo {
     text-decoration: none;
     float: left;
+    margin-right: 10px;
 }
 
 header h1 {
@@ -43,6 +44,9 @@ header h1 {
 #content-wrapper {
     padding: 10px 10px 10px 10px;
     margin-bottom: 35px;
+}
+#secondary-toggle {
+    display: none;
 }
 
 #breadcrumb {

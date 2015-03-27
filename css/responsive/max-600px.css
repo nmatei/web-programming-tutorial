@@ -1,0 +1,81 @@
+#layout {
+    min-width: 200px;
+}
+#logo {
+    float: none;
+}
+header h1 {
+    text-align: left;
+    font-size: 1.5em;
+}
+#secondary-toggle {
+    display: block;
+    float: right;
+    width: 39px;
+    height: 39px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    text-align: center;
+    margin: 1px 1px 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffffff;
+}
+.genericon:before {
+    margin-right: 20px;
+    padding-left: 4px;
+}
+.genericon:hover {
+    cursor: pointer;
+    color: #e4c05c;
+}
+#secondary-toggle:hover,
+#secondary-toggle:focus {
+    color: #29a7e1;
+    background: #ffffff;
+}
+#secondary-toggle.toggled-on:before {
+    content: "\f406";
+}
+#left-bar.toggled-on {
+    display: block;
+}
+
+#left-bar {
+    float: none;
+    width: 100%;
+    display: none;
+}
+#content {
+    padding-left: 0;
+    word-wrap: break-word;
+}
+
+/* much smaller screens */
+@media (max-width: 400px) {
+    #top-menu div ul a {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 300px) {
+    #secondary-toggle {
+        float: none;
+        margin: 0 1px 1px auto;
+    }
+    #top-menu div {
+        height: auto;
+        padding-top: 1px;
+    }
+    #top-menu div ul {
+        display: none;
+    }
+    #top-menu div ul li {
+        float: none;
+        display: block;
+    }
+    #top-menu ul.toggled-on {
+        display: block;
+    }
+}
