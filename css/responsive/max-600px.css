@@ -15,15 +15,15 @@ header h1 {
     height: 39px;
     background-color: transparent;
     border: 1px solid #ffffff;
-    text-align: center;
     margin: 1px 1px 0 0;
+    padding: 0;
     overflow: hidden;
     white-space: nowrap;
     color: #ffffff;
 }
 .genericon:before {
     margin-right: 20px;
-    padding-left: 4px;
+    padding-left: 10px;
 }
 .genericon:hover {
     cursor: pointer;
@@ -53,13 +53,17 @@ header h1 {
 
 /* much smaller screens */
 @media (max-width: 400px) {
+    header h1 {
+        text-align: left;
+        font-size: 0.8em;
+    }
     #top-menu div ul a {
         padding-left: 8px;
         padding-right: 8px;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 310px) {
     #secondary-toggle {
         float: none;
         margin: 0 1px 1px auto;
