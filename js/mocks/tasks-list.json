@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "tasks": [
+    {
+      "name": "Learn HTML",
+      "done": false,
+      "id": 1
+    },
+    {
+      "name": "Learn CSS",
+      "done": false,
+      "id": 2
+    },
+    {
+      "name": "Learn JS",
+      "done": false,
+      "id": 3
+    }
+  ]
+}
