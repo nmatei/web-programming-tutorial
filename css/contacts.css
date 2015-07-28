@@ -1,0 +1,32 @@
+#contact-form {
+    margin-top: 5px;
+}
+
+#contact-form input {
+    width: 40%;
+}
+
+#contact-form button {
+    min-width: 50px;
+}
+
+#contact-form .save {
+    display: none;
+}
+
+#contacts-list {
+    border-collapse: collapse;
+    margin:5px 0 5px 0;
+    width: 100%;
+}
+
+#contacts-list, #contacts-list td, #contacts-list th {
+    border: 1px solid #29a7e1;
+}
+#contacts-list td, #contacts-list th {
+    padding: 5px;
+    text-align: center;
+}
+#contacts-list th{
+    font-weight: bold;
+}
