@@ -4,6 +4,8 @@ Web Programming Tutorial
 Web Site example using css layout and basic java script utilities
 
 [HTML Preview](https://rawgit.com/nmatei/web-programming-tutorial/master/index.html)
+[Contacts](https://rawgit.com/nmatei/web-programming-tutorial/master/contacts.html)
+[Playing Cards Template](https://rawgit.com/nmatei/web-programming-tutorial/master/templates/cards.html)
 
 Exercises
 ---------
