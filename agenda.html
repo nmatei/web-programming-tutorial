@@ -92,42 +92,47 @@
                 <tr>
                     <th>Nume</th>
                     <th>Prenume</th>
-                    <th>email</th>
+                    <th>Email</th>
+                    <th width="100">actions</th>
                 </tr>
                 <tr class="favorit">
                     <td>Popescu</td>
                     <td>Nicolae</td>
                     <td>nick@example.com</td>
+                    <td><a href="#">Edit</a> <a href="#">Delete</a></td>
                 </tr>
                 <tr class="favorit">
                     <td>Petrescu</td>
                     <td>Gabi</td>
                     <td>gabi@example.com</td>
+                    <td><a href="#">Edit</a> <a href="#">Delete</a></td>
                 </tr>
                 <tr>
                     <td>Vasilescu</td>
                     <td>Raul</td>
                     <td>raul@example.com</td>
+                    <td><a href="#">Edit</a> <a href="#">Delete</a></td>
                 </tr>
                 <tr>
                     <td>Ionescu</td>
                     <td>Denisa</td>
                     <td>denisa@example.com</td>
+                    <td><a href="#">Edit</a> <a href="#">Delete</a></td>
                 </tr>
             </table>
 
-            <form action="index.html">
+            <form action="agenda-add.html" method="POST">
                 <div>
                     <label for="nume">Nume</label>
-                    <input id="nume" type="text">
+                    <input id="nume" name="lastName" type="text">
                 </div>
                 <div>
                     <label for="prenume">Prenume</label>
-                    <input id="prenume" type="text">
+                    <input id="prenume" name="firstName" type="text">
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input id="email" type="text">
+                    <input id="email" name="email" type="text">
                 </div>
                 <button type="submit">
                     Save
