@@ -1,11 +1,14 @@
 console.info('listing agenda');
 
-var row = '<tr>'+
-    '<td>Popescu</td>' +
-    '<td>Nicolae</td>' +
-    '<td>nick@example.com</td>' +
-    '<td><a href="#">Edit</a> <a href="#">Delete</a></td>' +
-    '</tr>';
+function getRow(lastName, firstName, email) {
+    var row = '<tr>'+
+        '<td>' + lastName + '</td>' +
+        '<td>' + firstName + '</td>' +
+        '<td>' + email + '</td>' +
+        '<td><a href="#">Edit</a> <a href="#">Delete</a></td>' +
+        '</tr>';
+    return row;
+}
 
 var contacts = [
     ["Popescu",     "Nicolae",  "Nicolae@example.com"],
@@ -17,5 +20,11 @@ var contacts = [
 var agendaTable = document.getElementById("agenda");
 var agendaBody = agendaTable.getElementsByTagName("tbody")[0];
 
-agendaBody.innerHTML = row;
+var contactsHTML = '';
 
+for(var i = 0; i < contacts.length; i++) {
+    var person = contacts[i];
+    contactsHTML += getRow(person[0], person[1], person[2]);
+}
+
+agendaBody.innerHTML = contactsHTML;
