@@ -11,10 +11,10 @@ function getRow(lastName, firstName, email) {
 }
 
 var contacts = [
-    ["Popescu",     "Nicolae",  "Nicolae@example.com"],
-    ["Petrescu",    "Gabi",     "Gabi@example.com"],
-    ["Vasilescu",   "Raul",     "Raul@example.com"],
-    ["Ionescu",     "Denisa",   "Denisa@example.com"]
+    {lastName:"Popescu",     firstName:"Nicolae",  email:"Nicolae@example.com"},
+    {lastName:"Petrescu",    firstName:"Gabi",     email:"Gabi@example.com"},
+    {lastName:"Vasilescu",   firstName:"Raul",     email:"Raul@example.com"},
+    {lastName:"Ionescu",     firstName:"Denisa",   email:"Denisa@example.com"}
 ];
 
 var agendaTable = document.getElementById("agenda");
@@ -24,7 +24,7 @@ var contactsHTML = '';
 
 for(var i = 0; i < contacts.length; i++) {
     var person = contacts[i];
-    contactsHTML += getRow(person[0], person[1], person[2]);
+    contactsHTML += getRow(person.lastName, person.firstName, person.email);
 }
 
 agendaBody.innerHTML = contactsHTML;
