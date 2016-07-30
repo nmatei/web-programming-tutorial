@@ -4,7 +4,7 @@ function getRow(person) {
     var row = '<tr>'+
         '<td>' + person.firstName + '</td>'+
         '<td>' + person.lastName + '</td>'+
-        '<td>07560000001</td>'+
+        '<td>' + person.phone + '</td>'+
         '<td>' +
             '<button class="edit" data-id="' + person.id + '">edit</button> ' +
             '<button class="remove" data-id="' + person.id + '">x</button>' +
@@ -14,7 +14,9 @@ function getRow(person) {
 }
 
 $.ajax({
-    url: "js/mocks/load-contacts.json"
+    url: "js/mocks/load-contacts.json",
+    dataType: 'json',
+    cache:false
 }).done(function(result) {
     console.debug('3) ajax done', result);
     showContacts(result);
