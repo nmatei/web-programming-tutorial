@@ -14,7 +14,7 @@ function getRow(person) {
 }
 
 $.ajax({
-    url: "js/mocks/load-contacts.json",
+    url: "servlets/load-contacts.php",
     dataType: 'json',
     cache:false
 }).done(function(result) {
@@ -24,9 +24,10 @@ $.ajax({
 
 function removeContact(id) {
     $.ajax({
-        url: "js/mocks/remove-contact.json",
+        url: "servlets/remove-contact.php",
         //type: 'DELETE',
         type: 'POST',
+        dataType: 'json',
         data: {
             id: id
         }

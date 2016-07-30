@@ -3,21 +3,7 @@
 <?php
 // Save Contact if necessary
 if (isset($_POST["firstName"])) {
-    $fileName = "js/mocks/load-contacts.json";
-    $allContactsStr = file_get_contents($fileName);
-    $allContacts = json_decode($allContactsStr);
-    $lastContact = $allContacts[count($allContacts) - 1];
-
-    $newPerson = array(
-        "id" => $lastContact->id + 1,
-        "phone" => $_POST["phone"],
-        "firstName" => $_POST["firstName"],
-        "lastName" => $_POST["lastName"]
-    );
-
-    $allContacts[] = $newPerson; // add new item in all contacts array
-    file_put_contents($fileName, json_encode($allContacts, JSON_PRETTY_PRINT));
-
+    include ("servlets/add-contact.php");
     echo "<p>Contact successfully added!</p>";
 }
 ?>
