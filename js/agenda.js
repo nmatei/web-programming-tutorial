@@ -1,5 +1,3 @@
-console.debug('1) loading agenda');
-
 function getRow(person) {
     var row = '<tr>'+
         '<td>' + person.firstName + '</td>'+
@@ -13,18 +11,25 @@ function getRow(person) {
     return row;
 }
 
-$.ajax({
-    url: "servlets/load-contacts.php",
-    dataType: 'json',
-    cache:false
-}).done(function(result) {
-    console.debug('3) ajax done', result);
-    showContacts(result);
-});
+function loadContacts() {
+    console.debug('loading agenda');
+    $.ajax({
+        url: template_directory_uri + "/servlets/load-contacts.php",
+        dataType: 'json',
+        cache:false
+    }).done(function(result) {
+        console.debug('agenda loaded', result);
+        showContacts(result);
+    });
+}
+
+if($('#agenda').length) {
+    loadContacts();
+}
 
 function removeContact(id) {
     $.ajax({
-        url: "servlets/remove-contact.php",
+        url: template_directory_uri + "/servlets/remove-contact.php",
         //type: 'DELETE',
         type: 'POST',
         dataType: 'json',
@@ -35,8 +40,6 @@ function removeContact(id) {
         showContacts(result);
     });
 }
-
-console.debug('2) after ajax');
 
 var allContacts = [];
 function showContacts(contacts) {

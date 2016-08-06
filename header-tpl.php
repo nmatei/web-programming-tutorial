@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PHP Intro 1</title>
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/cards.css">
-    <link rel="stylesheet" type="text/css" href="css/agenda.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/cards.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/agenda.css">
 
-    <link rel="stylesheet" type="text/css" href="css/responsive/max-600px.css" media="(max-width: 600px)">
-    <link rel="stylesheet" type="text/css" href="css/responsive/min-1024px.css" media="(min-width: 1024px)">
-    <link rel="stylesheet" type="text/css" href="css/fonts/genericons/genericons.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/responsive/max-600px.css" media="(max-width: 600px)">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/responsive/min-1024px.css" media="(min-width: 1024px)">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri()?>/css/fonts/genericons/genericons.css" media="all" />
 </head>
 <body>
 
