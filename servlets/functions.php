@@ -5,7 +5,7 @@ function getConnection() {
 }
 
 function getContacts($conn) {
-    $result = pg_query($conn, 'select * from "Agenda"');
+    $result = pg_query($conn, 'select * from "Agenda" order by prenume, nume');
     $records = array();
 
     while ($row = pg_fetch_array($result)) {

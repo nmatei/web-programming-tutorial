@@ -1,0 +1,12 @@
+.borders {
+    border: 0 solid gray;
+}
+.b-red {
+    border-color: red;
+}
+.b-blue {
+    border-color: blue;
+}
+.b-green {
+    border-color: green;
+}

@@ -13,14 +13,20 @@ function getRow(person) {
     return row;
 }
 
-$.ajax({
-    url: "servlets/load-contacts.php",
-    dataType: 'json',
-    cache:false
-}).done(function(result) {
-    console.debug('3) ajax done', result);
-    showContacts(result);
-});
+function loadContacts() {
+    $.ajax({
+        url: "servlets/load-contacts.php",
+        dataType: 'json',
+        cache:false
+    }).done(function(result) {
+        console.debug('3) ajax done', result);
+        showContacts(result);
+    });
+}
+
+if($('#agenda').length) {
+    loadContacts();
+}
 
 function removeContact(id) {
     $.ajax({

@@ -4,7 +4,7 @@
 // Save Contact if necessary
 if (isset($_POST["firstName"])) {
     include ("servlets/add-contact.php");
-    echo "<p>Contact successfully added!</p>";
+    echo "<p>Contact successfully $action!</p>";
 }
 ?>
 
