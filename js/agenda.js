@@ -6,8 +6,8 @@ function getRow(person) {
         '<td>' + person.lastName + '</td>'+
         '<td>' + person.phone + '</td>'+
         '<td>' +
-            '<button class="edit" data-id="' + person.id + '">edit</button> ' +
-            '<button class="remove" data-id="' + person.id + '">x</button>' +
+            '<button type="button" class="edit" data-id="' + person.id + '">edit</button> ' +
+            '<button type="button" class="remove" data-id="' + person.id + '">x</button>' +
         '</td>'+
         '</tr>';
     return row;
@@ -71,6 +71,28 @@ function editContact(id) {
     $("[name='phone']").val(person.phone);
 }
 
+function inlineEditContact(id, editButton) {
+    var person = findContactById(id);
+    var tr = $(editButton).parents('tr');
+    console.debug(editButton, tr.children('td').get(0));
+
+    tr.parents('form').children('input[name="id"]').val(person.id);
+
+    var firstNameInput = $('<input name="firstName">');
+    var lastNameInput = $('<input name="lastName">');
+    var phoneInput = $('<input name="phone">');
+
+    firstNameInput.val(person.firstName);
+    lastNameInput.val(person.lastName);
+    phoneInput.val(person.phone);
+
+    $(tr.children('td').get(0)).html('').append(firstNameInput);
+    $(tr.children('td').get(1)).html('').append(lastNameInput);
+    $(tr.children('td').get(2)).html('').append(phoneInput);
+
+    $(tr.children('td').get(3)).html('').append('<button type="submit">Save</button>')
+}
+
 $('#agenda').on('click', 'button.remove', function(){
     var id = $(this).data('id');
     console.info('remove this contact', this, id);
@@ -79,6 +101,7 @@ $('#agenda').on('click', 'button.remove', function(){
 
 $('#agenda').on('click', 'button.edit', function(){
     var id = $(this).data('id');
-    console.info('edit this contact', this, id);
-    editContact(id);
+    console.info('edit this contact', id);
+    //editContact(id);
+    inlineEditContact(id, this);
 });

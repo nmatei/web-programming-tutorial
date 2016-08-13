@@ -11,6 +11,11 @@ if (isset($_POST["firstName"])) {
 
 <div id="breadcrumb">HOME : welcome home</div>
 
+    <br>
+<div>
+    <script type="text/javascript" src="http://www.resursecrestine.ro/web-api-versetul-zilei"></script>
+</div>
+
 <h1>Agenda</h1>
 
 <form action="" method="post">
@@ -22,6 +27,8 @@ if (isset($_POST["firstName"])) {
 </form>
 <br>
 
+<form action="" method="post">
+    <input type="hidden" name="id">
 <table id="agenda">
     <thead>
         <tr>
@@ -35,5 +42,6 @@ if (isset($_POST["firstName"])) {
 
     </tbody>
 </table>
+</form>
 
 <?php include("footer-tpl.php"); ?>
