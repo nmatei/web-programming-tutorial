@@ -5,8 +5,6 @@ function getContactHTML(contact) {
         '<td>' + contact.phone + '</td>'+
         '</tr>';
 }
-// document.getElementById('agenda').getElementsByTagName('tbody')[0].innerHTML += contact;
-//$('#agenda tbody').html(contact1 + contact2 + ...);
 
 var contacts = [
     {firstName: 'Nicolae', lastName: 'Matei', phone: '123'},
@@ -14,9 +12,13 @@ var contacts = [
     {firstName: 'Victor', lastName: 'D', phone: '345'}
 ];
 
-var contactsHTML = '';
-for(var i = 0; i < contacts.length; i++) {
-    console.info(contacts[i]);
-    contactsHTML += getContactHTML(contacts[i]);
+function showContacts(contacts) {
+    var contactsHTML = '';
+    for(var i = 0; i < contacts.length; i++) {
+        console.info(contacts[i]);
+        contactsHTML += getContactHTML(contacts[i]);
+    }
+    $('#agenda tbody').html(contactsHTML);
 }
-$('#agenda tbody').html(contactsHTML);
+
+showContacts(contacts);
