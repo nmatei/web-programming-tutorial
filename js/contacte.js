@@ -1,17 +1,17 @@
 function getContactHTML(contact) {
     return '<tr>'+
-        '<td>' + contact[0] + '</td>'+
-        '<td>' + contact[1] + '</td>'+
-        '<td>' + contact[2] + '</td>'+
+        '<td>' + contact.firstName + '</td>'+
+        '<td>' + contact.lastName + '</td>'+
+        '<td>' + contact.phone + '</td>'+
         '</tr>';
 }
 // document.getElementById('agenda').getElementsByTagName('tbody')[0].innerHTML += contact;
 //$('#agenda tbody').html(contact1 + contact2 + ...);
 
 var contacts = [
-    ['Matei', 'Nicolae', '123'],
-    ['Vasile', 'U', '234'],
-    ['Victor', 'D', '345']
+    {firstName: 'Nicolae', lastName: 'Matei', phone: '123'},
+    {firstName: 'Vasile', lastName: 'U', phone: '234'},
+    {firstName: 'Victor', lastName: 'D', phone: '345'}
 ];
 
 var contactsHTML = '';
