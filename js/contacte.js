@@ -6,11 +6,7 @@ function getContactHTML(contact) {
         '</tr>';
 }
 
-var contacts = [
-    {firstName: 'Nicolae', lastName: 'Matei', phone: '123'},
-    {firstName: 'Vasile', lastName: 'U', phone: '234'},
-    {firstName: 'Victor', lastName: 'D', phone: '345'}
-];
+var contacts = [];
 
 function showContacts(contacts) {
     var contactsHTML = '';
@@ -21,4 +17,11 @@ function showContacts(contacts) {
     $('#agenda tbody').html(contactsHTML);
 }
 
-showContacts(contacts);
+$.ajax('servlets/contacts.json', {
+    success: function(contacts){
+        console.info('contacts loaded', contacts);
+        showContacts(contacts);
+    }
+});
+
+console.info('page loaded');
