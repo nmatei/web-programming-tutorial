@@ -17,10 +17,9 @@ function showList(shoppingList) {
     document.getElementsByTagName('tbody')[0].innerHTML = lista;
 }
 
-var shoppingList = [
-    {nume: 'Paine', cantitate: 1},
-    {nume: 'Suc', cantitate: 3},
-    {nume: 'Mere', cantitate: 10}
-];
-
-showList(shoppingList);
+$.ajax('js/mocks/shopping-list.json', {
+    success: function(shoppingList){
+        console.info(shoppingList);
+        showList(shoppingList);
+    }
+});
