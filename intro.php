@@ -24,12 +24,7 @@ echo "<br>Nume Complet: " . getName($firstName, $name);
 
 $n = 5;
 for($i = 1; $i <= 10; $i++) {
-    echo "<br>";
-    echo $i;
-    echo " * ";
-    echo $n;
-    echo " = ";
-    echo $i * $n;
+    echo "<br>" . $i . " * " . $n . " = " . ($i * $n);
 }
 
 ?>
