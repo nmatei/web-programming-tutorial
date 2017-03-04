@@ -14,13 +14,14 @@ function getName($firstName, $name) {
     return $firstName . " " . $name;
 }
 echo "<br>Nume Complet: " . getName($firstName, $name);
-
 ?>
 
 <h1>Tabla inmultirii</h1>
-<br>
-
 <?php
+
+for($i = 1; $i <= 10; $i++) {
+    echo "<a href='?n=$i'>$i</a> | ";
+}
 
 function printTablaInmultii($n) {
     echo "<br>----------";
@@ -30,9 +31,12 @@ function printTablaInmultii($n) {
     }
 }
 
-for($i = 1; $i <= 10; $i++) {
-    printTablaInmultii($i);
-}
+printTablaInmultii($_GET["n"]);
+
+//for($i = 1; $i <= 10; $i++) {
+//    printTablaInmultii($i);
+//}
+
 
 
 ?>
