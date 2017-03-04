@@ -51,5 +51,5 @@ Lesson 2 Plan
 - add project in tomcat to make ajax calls (example to make link in webapps)
     
         cd c:\Progs\apache-tomcat-8.0.20\webapps
-        mklink /J web-tutorial c:\Producs\web-programming-tutorial
+        mklink /J web-tutorial c:\Products\web-programming-tutorial
 
