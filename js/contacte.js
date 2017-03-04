@@ -18,7 +18,8 @@ function showContacts(contacts) {
 }
 
 function loadContacts() {
-    $.ajax('servlets/contacts.json', {
+    $.ajax('servlets/contacts.php', {
+        dataType: 'json',
         success: function(contacts){
             console.info('contacts loaded', contacts);
             showContacts(contacts);
