@@ -14,7 +14,11 @@ function getRow(nume, prenume, tel) {
 var table = document.getElementById('contacts-list');
 var tbody = table.getElementsByTagName('tbody')[0];
 
-for(var i = 0; i < contacts.length; i++) {
-    var contact = contacts[i];
+// for(var i = 0; i < contacts.length; i++) {
+//     var contact = contacts[i];
+//     tbody.innerHTML += getRow(contact.nume, contact.prenume, contact.phone);
+// }
+
+contacts.forEach(function(contact) {
     tbody.innerHTML += getRow(contact.nume, contact.prenume, contact.phone);
-}
+});
