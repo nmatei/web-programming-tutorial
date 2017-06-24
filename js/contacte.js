@@ -2,7 +2,6 @@ console.info('lista de contacte');
 
 function getRow(contact) {
     var row = '<tr><td>' + contact.nume + '</td><td>' + contact.prenume + '</td><td>'+ contact.phone +'</td>'+
-            //'<td>[<a href="servlet/remove-contact.json?id=' + contact.id + '">x</a>]</td>'+
             '<td>[<a href="#" class="remove-contact" data-id="'+ contact.id +'">x</a>]</td>'+
         '</tr>';
     return row;
