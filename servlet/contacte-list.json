@@ -1,6 +1,6 @@
 [
-  {"phone": "0756000001", "nume": "Matei", "prenume": "Nicolae"},
-  {"phone": "0756000002", "nume": "Reuț", "prenume": "Dan"},
-  {"phone": "0756000003", "nume": "Babut", "prenume": "Bogdan"},
-  {"phone": "0756000004", "nume": "Cuibus", "prenume": "Alex"}
+  {"id": 1, "phone": "0756000001", "nume": "Matei", "prenume": "Nicolae"},
+  {"id": 2, "phone": "0756000002", "nume": "Reuț", "prenume": "Dan"},
+  {"id": 3, "phone": "0756000003", "nume": "Babut", "prenume": "Bogdan"},
+  {"id": 4, "phone": "0756000004", "nume": "Cuibus", "prenume": "Alex"}
 ]

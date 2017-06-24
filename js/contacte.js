@@ -1,7 +1,9 @@
 console.info('lista de contacte');
 
-function getRow(nume, prenume, tel) {
-    var row = '<tr><td>' + nume + '</td><td>' + prenume + '</td><td>'+ tel +'</td></tr>';
+function getRow(contact) {
+    var row = '<tr><td>' + contact.nume + '</td><td>' + contact.prenume + '</td><td>'+ contact.phone +'</td>'+
+            '<td>[<a href="servlet/remove-contact.json?id=' + contact.id + '">x</a>]</td>'+
+        '</tr>';
     return row;
 }
 
@@ -21,7 +23,7 @@ $.ajax('servlet/contacte-list.json').done(function(contacts){
     console.info('3) contacts loaded', contacts);
 
     contacts.forEach(function(contact) {
-        tbody.innerHTML += getRow(contact.nume, contact.prenume, contact.phone);
+        tbody.innerHTML += getRow(contact);
     });
 });
 

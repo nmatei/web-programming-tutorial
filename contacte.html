@@ -87,12 +87,21 @@
         <div id="content">
             <div id="breadcrumb">Contacte</div>
 
+            <br>
+            <form action="servlet/contact-save.json" method="post">
+                <input type="text" name="firstName" placeholder="Nume" required>
+                <input type="text" name="lastName" placeholder="Prenume" required>
+                <input type="text" name="phone" placeholder="Telefon" required>
+                <button>Add</button>
+            </form>
+
             <table id="contacts-list">
                 <thead>
                 <tr>
                     <th>Nume</th>
                     <th>Prenume</th>
                     <th>Telefon</th>
+                    <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
