@@ -37,7 +37,6 @@ $("#contacts-list tbody").html(tableContent);
 
 
 
-
 var person = {
     lastName: "Matei",
     firstName: "Nicolae",
@@ -53,5 +52,28 @@ var person = {
     }
 };
 
-console.info(person.firstName);
-person.voiceCall("Soacra");
+//console.info(person.firstName);
+//person.voiceCall("Soacra");
+
+
+
+function callContact(contact) {
+    console.info('calling...', contact.firstName);
+}
+function feedContact(contact) {
+    console.info('feeding...', contact.firstName);
+}
+function forEachContacts(action){
+    for(var i = 0; i < contacte.length; i++) {
+        action(contacte[i]);
+    }
+}
+forEachContacts(callContact);
+forEachContacts(feedContact);
+
+contacte.forEach(function(contact) {
+    console.info('calling...', contact.firstName);
+});
+contacte.forEach(function(contact) {
+    console.info('feeding...', contact.firstName);
+});
