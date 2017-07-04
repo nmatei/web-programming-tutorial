@@ -1,12 +1,8 @@
 function getRow(firstName, lastName, phone) {
-    if(phone == undefined) {
-        phone = '';
-    }
-    if(typeof lastName == 'undefined') {
-        lastName = '';
-    }
-    //firstName = firstName || '';
-    var row = '<tr><td>' + lastName + '</td><td>' + (firstName || '') + '</td><td>' + phone + '</td></tr>';
+    phone = phone || '';
+    lastName = lastName || '';
+    firstName = firstName || '';
+    var row = '<tr><td>' + lastName + '</td><td>' + firstName + '</td><td>' + phone + '</td></tr>';
     return row;
 }
 
@@ -20,10 +16,16 @@ var contacte = [
 ];
 
 var tableContent = '';
-for(var i = 0; i< contacte.length; i++) {
-    var contact = contacte[i];
+
+function createRow(contact){
     tableContent += getRow(contact.firstName, contact.lastName, contact.phone);
 }
+
+for(var i = 0; i < contacte.length; i++) {
+    createRow(contacte[i]);
+}
+
+// contacte.forEach(createRow);
 
 $("#contacts-list tbody").html(tableContent);
 
