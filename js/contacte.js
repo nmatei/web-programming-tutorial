@@ -1,21 +1,55 @@
-
 function getRow(firstName, lastName, phone) {
-    var row = '<tr><td>' + lastName + '</td><td>' + firstName + '</td><td>' + phone + '</td></tr>';
+    if(phone == undefined) {
+        phone = '';
+    }
+    if(typeof lastName == 'undefined') {
+        lastName = '';
+    }
+    //firstName = firstName || '';
+    var row = '<tr><td>' + lastName + '</td><td>' + (firstName || '') + '</td><td>' + phone + '</td></tr>';
     return row;
 }
 
 var contacte = [
-    ['Nicolae',   'Matei', '01'],
-    ['Nicoleta',  'Matei', '02'],
-    ['Andrei',    'I',     '03'],
-    ['Alexandra', 'V',     '04']
+    {firstName: 'Nicolae', lastName: 'Matei', phone: '01'},
+    {firstName: 'Nicoleta', lastName: 'Matei', phone: '02'},
+    {firstName: 'Andrei', lastName: 'Ion', phone: '03'},
+    {firstName: 'Alexandra', lastName: 'Vasile', phone: '04'},
+    {firstName: 'Andrei'},
+    {lastName: 'Basescu'}
 ];
 
 var tableContent = '';
 for(var i = 0; i< contacte.length; i++) {
     var contact = contacte[i];
-    tableContent += getRow(contact[0], contact[1], contact[2]);
+    tableContent += getRow(contact.firstName, contact.lastName, contact.phone);
 }
 
-$("#contacts-list tbody").html('hackerii au preluat comanda calculatorului lui matei! trololo');
+$("#contacts-list tbody").html(tableContent);
 
+
+// 1. convert from array of arrays into json
+// 2. load contacts from json file with AJAX
+// 3. remove contacts (UI)
+// 4. edit contact (UI)
+
+
+
+
+var person = {
+    lastName: "Matei",
+    firstName: "Nicolae",
+    age: 19,
+    married: true,
+    skills: ["html", "css", "js"],
+    voiceCall: function(nume) {
+        console.info('te rog sa suni pe ', nume);
+    },
+    partner: {
+        firstName: "M",
+        age: 18
+    }
+};
+
+console.info(person.firstName);
+person.voiceCall("Soacra");
