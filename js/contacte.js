@@ -1,18 +1,21 @@
-function getRow(firstName, lastName, phone) {
-    phone = phone || '';
-    lastName = lastName || '';
-    firstName = firstName || '';
-    var row = '<tr><td>' + lastName + '</td><td>' + firstName + '</td><td>' + phone + '</td></tr>';
+function getRow(contact) {
+    var id = contact.id;
+    var phone = contact.phone || '';
+    var lastName = contact.lastName || '';
+    var firstName = contact.firstName || '';
+    var row = '<tr><td>' + lastName + '</td><td>' + firstName + '</td><td>' + phone + '</td>' +
+        '<td>[<a href="date/remove.html?id=' + id + '">x</a>]</td>' +
+        '</tr>';
     return row;
 }
 
 var tableContent = '';
 
-function createRow(contact){
-    tableContent += getRow(contact.firstName, contact.lastName, contact.phone);
+function createRow(contact) {
+    tableContent += getRow(contact);
 }
 
-$.ajax('date/contacte.json').done(function(contacte){
+$.ajax('date/contacte.json').done(function (contacte) {
     console.info('contacte', contacte);
     contacte.forEach(createRow);
     $("#contacts-list tbody").html(tableContent);

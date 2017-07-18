@@ -1,6 +1,6 @@
 [
-  {"firstName": "Nicolae", "lastName": "Matei", "phone": "01"},
-  {"firstName": "Nicoleta", "lastName": "Matei", "phone": "02"},
-  {"firstName": "Andrei", "lastName": "Ion", "phone": "03"},
-  {"firstName": "Alexandra", "lastName": "Vasile", "phone": "04"}
+  {"id": 1, "firstName": "Nicolae", "lastName": "Matei", "phone": "01"},
+  {"id": 2, "firstName": "Nicoleta", "lastName": "Matei", "phone": "02"},
+  {"id": 3, "firstName": "Andrei", "lastName": "Ion", "phone": "03"},
+  {"id": 4, "firstName": "Alexandra", "lastName": "Vasile", "phone": "04"}
 ]
