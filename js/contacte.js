@@ -18,10 +18,11 @@ function createRow(contact) {
     tableContent += getRow(contact);
 }
 
-// 2. TODO response/content type (json)
-// 3. TODO status codes: 200, 404, 5**, 3**
-$.ajax('date/contacte.json', {cache: false}).done(function (contacte) {
-    console.debug('contacte', contacte);
+$.ajax('date/contacte.json', {
+    cache: false,
+    dataType: 'json'
+}).done(function (contacte) {
+    console.debug('contacts loaded', contacte);
     contacte.forEach(createRow);
     $("#contacts-list tbody").html(tableContent);
 });
