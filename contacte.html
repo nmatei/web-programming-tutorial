@@ -90,10 +90,11 @@
             <div id="breadcrumb">HOME : welcome home</div>
 
             <form action="date/add.php" id="contact-form">
+                <input type="hidden" name="id">
                 <input type="text" name="lastName" placeholder="Nume" required>
                 <input type="text" name="firstName" placeholder="Prenume" required>
                 <input type="text" name="phone" placeholder="Telefon" required>
-                <button>Add</button>
+                <button>Save</button>
             </form>
 
             <table id="contacts-list">

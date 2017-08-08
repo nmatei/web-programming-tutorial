@@ -6,7 +6,7 @@ function getRow(contact) {
     var row = '<tr><td>' + lastName + '</td><td>' + firstName + '</td><td>' + phone + '</td>' +
         '<td class="actions">'+
             '<span><a href="date/remove.html?id=' + id + '">&#x2716;</a></span> '+
-            '<span><a href="#">&#x270E;</a></span>'+
+            '<span><a href="#" class="edit" data-id="' + id + '">&#x270E;</a></span>'+
         '</td>' +
         '</tr>';
     return row;
@@ -25,11 +25,23 @@ $.ajax('date/contacte.json', {
     console.debug('contacts loaded', contacte);
     contacte.forEach(createRow);
     $("#contacts-list tbody").html(tableContent);
+
+    $('#contacts-list a.edit').click(function() {
+        var id = $(this).data('id');
+        var contact = contacte.find(function(c) {
+            return c.id == id;
+        });
+        console.debug('remove', id, contact, this);
+
+        $('input[name=id]').val(contact.id);
+        $('input[name=lastName]').val(contact.lastName);
+        $('input[name=firstName]').val(contact.firstName);
+        $('input[name=phone]').val(contact.phone);
+    });
 });
 
 // 1. convert from array of arrays into json
-// 2. load contacts from json file with AJAX
 // 3. remove contacts (UI)
 // 4. edit contact (UI)
 // 5. TODO php includes / templates
-// 6. TODO create new number (auto increment when add new contact)
+
