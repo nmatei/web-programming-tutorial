@@ -12,7 +12,7 @@ var tbody = table.getElementsByTagName('tbody')[0];
 
 console.info("1) before load contacts");
 
-$.ajax('servlet/contacte-list.json').done(function(contacts){
+$.ajax('servlet/contacte-list.php', {dataType: 'json'}).done(function(contacts){
     console.info('3) contacts loaded', contacts);
 
     contacts.forEach(function(contact) {
@@ -30,7 +30,7 @@ $.ajax('servlet/contacte-list.json').done(function(contacts){
 console.info("2) after load contacts");
 
 function removeContact(id) {
-    $.post('servlet/remove-contact.json', {
+    $.post('servlet/remove-contact.php', {
         id: id
     })
 }
