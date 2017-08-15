@@ -18,7 +18,7 @@ function createRow(contact) {
     tableContent += getRow(contact);
 }
 
-$.ajax('date/contacte.json', {
+$.ajax('date/list.php', {
     cache: false,
     dataType: 'json'
 }).done(function (contacte) {
