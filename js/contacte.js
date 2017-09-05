@@ -44,4 +44,3 @@ $.ajax('date/list.php', {
 // 3. remove contacts (UI)
 // 4. edit contact (UI)
 // 5. TODO php includes / templates
-

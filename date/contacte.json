@@ -1,1 +1,20 @@
-[{"id":1,"firstName":"Nick","lastName":"Matei","phone":"1"},{"id":3,"firstName":"EE","lastName":"CC","phone":"12121"},{"id":5,"firstName":"Alexandra","lastName":"B","phone":"321"}]
+[
+  {
+    "id": 1,
+    "firstName": "Nick",
+    "lastName": "Matei",
+    "phone": "1"
+  },
+  {
+    "id": 3,
+    "firstName": "EE",
+    "lastName": "CC",
+    "phone": "12121"
+  },
+  {
+    "id": 5,
+    "firstName": "Alexandra",
+    "lastName": "B",
+    "phone": "321"
+  }
+]
