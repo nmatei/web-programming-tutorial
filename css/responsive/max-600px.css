@@ -52,7 +52,7 @@ header h1 {
 }
 
 /* much smaller screens */
-@media (max-width: 400px) {
+@media (max-width: 455px) {
     header h1 {
         text-align: left;
         font-size: 0.8em;
