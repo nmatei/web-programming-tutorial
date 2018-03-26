@@ -9,12 +9,21 @@ function addNumbers(a, b) {
     console.info('primul numar este ' + a);
     console.info('al doilea numar este ' + b);
 
-    for (; b > 0;) {
-        b--; // luam un deget de la b
-        a++; // il punem la a
-        console.info(a + ' - au mai ramas ' + b + ' degetele');
+    var suma = a; // numarul cel mai mare
+    var degete = b; // min
+
+    if (a < b) {
+        suma = b;
+        degete = a;
     }
-    console.info('suma este: ' + a);
+
+    for (; degete > 0;) {
+        degete--; // luam un deget de la b
+        suma++; // il punem la a
+        console.info(suma + ' - au mai ramas ' + degete + ' degetele');
+    }
+    console.info('suma este: ' + suma);
 }
 
-var count = addNumbers(6, 8);
+var count = addNumbers(2, 6);
+
