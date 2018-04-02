@@ -1,8 +1,18 @@
+function getRow(firstName, lastName, phone) {
+    return "<tr><td>" + firstName + "</td><td>" + lastName + "</td><td>" + phone + "</td></tr>";
+}
 
+var persons = [
+    getRow("Nicolae", "Matei", "321"),
+    getRow("Andrei", "Ille", "123"),
+    getRow("Raluca", "Ignat", "543")
+];
 
-var row1 = "<tr><td>Nicolae</td><td>Matei</td><td>0</td></tr>";
-var row2 = "<tr><td>Andrei</td><td>Ille</td><td>0</td></tr>";
+var rows = '';
 
-//document.getElementById('phone-book').getElementsByTagName('tbody')[0].innerHTML = row1 + row2;
-$('#phone-book tbody').html(row1 + row2);
+persons.forEach(function(person) {
+    rows += person;
+});
+
+$('#phone-book tbody').html(rows);
 
