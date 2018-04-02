@@ -3,15 +3,17 @@ function getRow(firstName, lastName, phone) {
 }
 
 var persons = [
-    getRow("Nicolae", "Matei", "321"),
-    getRow("Andrei", "Ille", "123"),
-    getRow("Raluca", "Ignat", "543")
+    // firstName, lastName, phone
+    ["Nicolae", "Matei", "321"],
+    ["Andrei", "Ille", "123"],
+    ["Raluca", "Ignat", "543"],
+    ["Damaris", "Sighiartau", "876"]
 ];
 
 var rows = '';
 
 persons.forEach(function(person) {
-    rows += person;
+    rows += getRow(person[0], person[1], person[2]);
 });
 
 $('#phone-book tbody').html(rows);
