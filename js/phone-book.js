@@ -2,19 +2,25 @@ function getRow(firstName, lastName, phone) {
     return "<tr><td>" + firstName + "</td><td>" + lastName + "</td><td>" + phone + "</td></tr>";
 }
 
-var persons = [
-    // firstName, lastName, phone
-    ["Nicolae", "Matei", "321"],
-    ["Andrei", "Ille", "123"],
-    ["Raluca", "Ignat", "543"],
-    ["Damaris", "Sighiartau", "876"]
-];
+var persons = [];
+console.info('loading persons');
 
-var rows = '';
-
-persons.forEach(function(person) {
-    rows += getRow(person[0], person[1], person[2]);
+$.ajax({
+    url: 'js/mocks/phone-book.json',
+    method: "GET"
+}).done(function (data) {
+    console.info('done:', data);
+    display(data);
 });
 
-$('#phone-book tbody').html(rows);
+function display(persons) {
+    var rows = '';
 
+    function createRows(person) {
+        rows += getRow(person.firstName, person["lastName"], person['phone']);
+    }
+
+    persons.forEach(createRows);
+
+    $('#phone-book tbody').html(rows);
+}
