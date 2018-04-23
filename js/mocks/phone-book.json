@@ -1,6 +1,6 @@
 [
-  {"firstName": "Nicolae", "lastName":"Matei", "phone": "321"},
-  {"firstName": "Andrei", "lastName": "Ille", "phone": "123"},
-  {"firstName": "Raluca", "lastName":"Ignat", "phone": "543"},
-  {"firstName": "Damaris", "lastName": "Sighiartau", "phone": "876"}
+  {"id": 1, "firstName": "Nicolae", "lastName":"Matei", "phone": "321"},
+  {"id": 2, "firstName": "Andrei", "lastName": "Ille", "phone": "123"},
+  {"id": 3, "firstName": "Raluca", "lastName":"Ignat", "phone": "543"},
+  {"id": 4, "firstName": "Damaris", "lastName": "Sighiartau", "phone": "876"}
 ]
