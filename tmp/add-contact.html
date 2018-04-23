@@ -1,0 +1,18 @@
+<html>
+<body>
+<h1>Multumim pentru cerere</h1>
+<p><a href="../phone-book.html">te rog sa revii mai tarziu</a></p>
+
+<script>
+    var search = window.location.search.substring(1);
+    var keys = search.split("&");
+    var v = {};
+    keys.forEach(function(key){
+        var properties = key.split('=');
+        v[properties[0]] = properties[1];
+    });
+
+    document.write(JSON.stringify(v));
+</script>
+</body>
+</html>

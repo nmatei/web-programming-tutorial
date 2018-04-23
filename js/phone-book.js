@@ -8,9 +8,9 @@ console.info('loading persons');
 $.ajax({
     url: 'js/mocks/phone-book.json',
     method: "GET"
-}).done(function (data) {
-    console.info('done:', data);
-    display(data);
+}).done(function (persons) {
+    console.info('done:', persons);
+    display(persons);
 });
 
 function display(persons) {
@@ -21,6 +21,13 @@ function display(persons) {
     }
 
     persons.forEach(createRows);
+
+    rows += '<tr>' +
+        '<td><input type="text" required name="firstName" placeholder="Enter first name"></td>' +
+        '<td><input type="text" name="lastName" placeholder="Enter last name"></td>' +
+        '<td><input type="text" required name="phone" placeholder="Enter phone">' +
+        '<button type="submit">Add</button></td>' +
+        '</tr>';
 
     $('#phone-book tbody').html(rows);
 }
