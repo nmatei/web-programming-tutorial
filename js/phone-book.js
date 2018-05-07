@@ -24,11 +24,16 @@ $.ajax({
 function display(persons) {
     var rows = '';
 
-    function createRows(person) {
-        rows += getRow(person);
-    }
-
-    persons.forEach(createRows);
+    // persons.forEach(function (person) {
+    //     rows += getRow(person);
+    // });
+    // persons.forEach((person) => {
+    //     rows += getRow(person);
+    // });
+    // persons.forEach(person => {
+    //     rows += getRow(person);
+    // });
+    persons.forEach(person => rows += getRow(person));
 
     console.info(rows);
 
