@@ -1,4 +1,4 @@
-Web Programming Tutorial
+Web Programming Amazing Tutorial
 ========================
 
 Web Site example using css layout and basic java script utilities
