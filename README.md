@@ -1,17 +1,15 @@
-Web Programming Tutorial
-========================
+# Web Programming Tutorial
 
 Web Site example using css layout and basic java script utilities
 
-Live examples: 
+## Live examples: 
 
 - [x] [HTML Preview](https://rawgit.com/nmatei/web-programming-tutorial/master/index.html)
 - [x] [Contacts](https://rawgit.com/nmatei/web-programming-tutorial/master/contacts.html)
 - [x] [Playing Cards Template](https://rawgit.com/nmatei/web-programming-tutorial/master/templates/cards.html)
 - [x] [Bootstrap Example](https://rawgit.com/nmatei/web-programming-tutorial/master/index-bootstrap.html)
 
-Exercises
----------
+## Exercises
 
 - Add new widget
 - Make sure you understand how to find any elements with:
@@ -23,8 +21,7 @@ Exercises
 - Make all widgets collapsible
 
 
-Learning Pure JS
-----------------
+## Learning Pure JS
 
 - variables
     - boolean | var employed = true;
@@ -38,8 +35,8 @@ Learning Pure JS
     - parameters
     - scope
 
-Lesson 2 Plan
---------
+## Lesson 2 Plan
+
 - review last lesson
 - homework review
 - DataView examples with general elements (html, css)
